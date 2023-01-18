@@ -168,6 +168,14 @@ File messenger.txt chứa nhị phân :
 
 Decode sang text được `S1BTVk5VSkJSU0FOQ0NMQUVBRUVHS0tPVU9FT0VBVFRUT1NFU1JPWVJGTFNJ` sau đó mình decode Base64 được : `KPSVNUJBRSANCCLAEAEEGKKOUOEOEATTTOSESROYRFLSI`
 
+Đến đây mình thấy phần description của bài là 'Hashibira Inosuke có nhặt được một bức thư được mã hóa trên đường ray' và mình nghĩ đến 
+```Rail Fence``` và mình lên https://www.dcode.fr/redefence-cipher để bruteforce và được flag :
+
+![image](https://user-images.githubusercontent.com/92881216/213079664-3c51788c-55b3-4de9-a662-b40d325375a8.png)
+
+> Flag : `KCSCPLEASESAVERENGOKUKYOJUROBEFORELASTSTATION`
+
+
 
 
 
