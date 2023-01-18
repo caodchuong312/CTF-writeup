@@ -1,4 +1,4 @@
-
+Cao Dang Chuong_AT18C
 
 # BinggChillinggg - PROG/MISC
 
@@ -174,6 +174,49 @@ Decode sang text được `S1BTVk5VSkJSU0FOQ0NMQUVBRUVHS0tPVU9FT0VBVFRUT1NFU1JPW
 ![image](https://user-images.githubusercontent.com/92881216/213079664-3c51788c-55b3-4de9-a662-b40d325375a8.png)
 
 > Flag : `KCSCPLEASESAVERENGOKUKYOJUROBEFORELASTSTATION`
+
+
+# cat -PWNABLE
+
+
+Description: nc 146.190.115.228 9994
+
+![image](https://user-images.githubusercontent.com/92881216/213080208-f65b87dd-884b-4284-8da1-08fa8d4f5368.png)
+
+Mình thử chạy dòng lệnh trên máy ảo kali của mình : 
+
+![image](https://user-images.githubusercontent.com/92881216/213080437-39ec2966-1e9f-4185-80b0-87239489e2cf.png)
+
+Như vậy chương trình sẽ cho nhập Username và Password để tiếp tục và bây giờ mình sẽ xem xét tập tin cat được đính kèm để xem mã nguồn.
+
+Mình sử dụng ghidra và truy cập vào hàm main và biết được username là "KCSC_4dm1n1str4t0r" .
+
+![image](https://user-images.githubusercontent.com/92881216/213081176-5cc12e9f-fd46-4223-9850-73fa2f34d93b.png)
+
+Đến đây mình cũng không biết làm sao nữa :v  nên mình chạy thử câu lệnh `strings cat` đển xem file có gì và mình nghĩ password là : 'wh3r3_1s_th3_fl4g' mình check user và pass thì nó đúng và bây giờ chương trình yêu cầu mình nhập secret :
+
+
+![image](https://user-images.githubusercontent.com/92881216/213083487-de5799fb-fefe-4e98-b874-83f07c779508.png)
+![image](https://user-images.githubusercontent.com/92881216/213083809-fdf9130e-1361-4917-971a-9bfcdc3b2eee.png)
+
+Mình không có thông tin gì về secret nên mình đã nghĩ đến buffer overflow và mình đã thành công khi nhập 512 ký tự 'a' :
+
+![image](https://user-images.githubusercontent.com/92881216/213084516-32c9d6a2-7a74-4319-93d0-e32370b8f6ba.png)
+
+> Flag : `KCSC{w3ll_d0n3_y0u_g0t_my_s3cr3t_n0w_d04942f299}`
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
